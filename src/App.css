@@ -1,0 +1,113 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+  /* color palette https://colorhunt.co/palette/161853292c6dfaedf0ec255a */
+
+
+  .app {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .explicit-btn {
+    display: grid;
+    background-color: #a9a8ad;
+    grid-auto-rows: minmax(100px, auto);
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .non-explicit-btn {
+    display: grid;
+    background-color: #3e8e41;
+    grid-auto-rows: minmax(100px, auto);
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .explicit-btn:hover {background-color: #a9a8ad}
+
+  .explicit-btn:active {background-color: #3e8e41}
+
+  .grid-container-gp-btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .button-gp {
+    display: grid;
+    background-color: #3e8e41;
+    grid-auto-rows: minmax(100px, auto);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button-gp-de-selected {
+    display: grid;
+    background-color: #a9a8ad;
+    grid-auto-rows: minmax(100px, auto);
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .grid-container-game {
+    grid-template-columns: repeat(1, 1fr);
+    color: white;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .card-display {
+    display: grid;
+    background-color: royalblue;
+    grid-auto-rows: minmax(300px, auto);
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-container-game-btn-nested {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    margin-top: 1em;
+  }
+
+  .fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    background: rgb(190, 190, 190); /* Just to visualize the extent */ 
+    }
+
+  .button {
+    background-color: #3e8e41;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .button:hover {background-color: #a9a8ad}
+
+  .button:active {background-color: #3e8e41}

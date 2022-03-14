@@ -698,32 +698,40 @@ const filterMiniGameCards = () => {
   displayCard(filteredMiniGameCards)
 }
 
-//create a func in 'setCardText' to randomly return a description from 'guessCards' without repeat 
+//create a func in 'setCardDescription' to randomly return a description from 'guessCards' without repeat 
 const displayGuessCard = () => {
   const randomIndex = Math.floor(Math.random() * guessCards.length);
   let lastCard = guessCards[randomIndex].id
-  setCardText('')
-  setCardText(guessCards[randomIndex].description)
+  setCardName('')
+  setCardName(guessCards[randomIndex].name)
+  setCardDescription('')
+  setCardDescription(guessCards[randomIndex].description)
   setGuessCards(guessCards.filter((guessCard) => guessCard.id !== lastCard)) //need to add error catch when array is empty
   console.log(guessCards);
 }
 
-//create a func in 'setCardText' to randomly return a description from 'mysteryCards' without repeat 
+//create a func in 'setCardDescription' to randomly return a description from 'mysteryCards' without repeat 
 const displayMysteryCard = () => {
   const randomIndex = Math.floor(Math.random() * mysteryCards.length);
   let lastCard = mysteryCards[randomIndex].id
-  setCardText('')
-  setCardText(mysteryCards[randomIndex].description)
+  setCardName('')
+  setCardName(mysteryCards[randomIndex].name)
+  setCardDescription('')
+  setCardDescription(mysteryCards[randomIndex].description)
   setMysteryCards(mysteryCards.filter((mysteryCard) => mysteryCard.id !== lastCard))
   console.log(mysteryCards);
 }
 
-const [cardText, setCardText] = useState('Descripton')
+const [cardDescription, setCardDescription] = useState('Description will show here')
+const [cardName, setCardName] = useState('Card Name will show here')
 
+//display miniGame Cards
 const displayCard = (filteredDeck) => {
   const randomIndex = Math.floor(Math.random() * filteredDeck.length);
-  setCardText('')
-  setCardText(filteredDeck[randomIndex].name)
+  setCardName('')
+  setCardName(filteredDeck[randomIndex].name)
+  setCardDescription('')
+  setCardDescription(filteredDeck[randomIndex].description)
   console.log(filteredDeck);
 }
 
@@ -741,7 +749,8 @@ const displayCard = (filteredDeck) => {
         filterBats={filterBats}
       />
       <GameContainer
-        cardText={cardText}
+        cardName={cardName}
+        cardDescription={cardDescription}
         filterMiniGameCards={filterMiniGameCards}
         displayGuessCard={displayGuessCard}
         displayMysteryCard={displayMysteryCard}

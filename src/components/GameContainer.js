@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const GameContainer = ({filterMiniGameCards, displayGuessCard, displayMysteryCard, cardText}) => {
+const GameContainer = ({filterMiniGameCards, displayGuessCard, displayMysteryCard, cardDescription, cardName}) => {
     const [isActive, setActive] = useState(false);
 
     const toggleClass = () => {
@@ -9,11 +9,14 @@ const GameContainer = ({filterMiniGameCards, displayGuessCard, displayMysteryCar
 
     return (
         <div className={isActive ? 'grid-container-game fullscreen': 'grid-container-game'}>
-            <div className='card-display' onClick={toggleClass} id='cardTextDisplay'>Your card: {cardText}</div>
+            <div className='card-display' onClick={toggleClass} id='cardTextDisplay'>
+                <div className='name'>{cardName}</div>
+                <div className='description'> {cardDescription}</div>
+            </div>
             <div className='grid-container-game-btn-nested'>
-                <button className='button' style={{ color: 'white'}} onClick={filterMiniGameCards}>MiniGame</button>
-                <button className='button'style={{ color: 'white'}} onClick={displayGuessCard}>Guess</button>
-                <button className='button'style={{ color: 'white'}} onClick={displayMysteryCard}>Mystery</button>
+                <button className='button miniGame-btn' onClick={filterMiniGameCards}>MiniGame</button>
+                <button className='button guess-btn' onClick={displayGuessCard}>Guess</button>
+                <button className='button mystery-btn' onClick={displayMysteryCard}>Mystery</button>
             </div>
         </div>
     )

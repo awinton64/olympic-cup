@@ -1,6 +1,6 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
-  /* color palette https://colorhunt.co/palette/161853292c6dfaedf0ec255a */
+    /* https://colorhunt.co/palette/5463ffecececffc300ff1818 */
 
 
   .app {
@@ -12,7 +12,8 @@
 
   .explicit-btn {
     display: grid;
-    background-color: #a9a8ad;
+    background-color: #ECECEC;
+    color: black;
     grid-auto-rows: minmax(100px, auto);
     justify-content: center;
     align-items: center;
@@ -24,7 +25,8 @@
 
   .non-explicit-btn {
     display: grid;
-    background-color: #3e8e41;
+    background-color: #000000;
+    color: white;
     grid-auto-rows: minmax(100px, auto);
     justify-content: center;
     align-items: center;
@@ -34,9 +36,9 @@
     margin-right: 1em;
   }
 
-  .explicit-btn:hover {background-color: #a9a8ad}
+  .explicit-btn:hover {background-color: #ECECEC}
 
-  .explicit-btn:active {background-color: #3e8e41}
+  .explicit-btn:active {background-color: #FF8E00}
 
   .grid-container-gp-btn {
     display: grid;
@@ -52,7 +54,8 @@
 
   .button-gp {
     display: grid;
-    background-color: #3e8e41;
+    background-color: #000000;
+    color: white;
     grid-auto-rows: minmax(100px, auto);
     justify-content: center;
     align-items: center;
@@ -60,7 +63,7 @@
 
   .button-gp-de-selected {
     display: grid;
-    background-color: #a9a8ad;
+    background-color: #ECECEC;
     grid-auto-rows: minmax(100px, auto);
     justify-content: center;
     align-items: center;
@@ -68,19 +71,32 @@
 
 
   .grid-container-game {
-    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    grid-template-columns: 1fr;
+    /* grid-template-columns: repeat(1, 1fr); */
     color: white;
+    background-color: royalblue;
     padding: 10px;
     align-items: center;
   }
 
   .card-display {
     display: grid;
-    background-color: royalblue;
-    grid-auto-rows: minmax(300px, auto);
+    /* grid-auto-rows: minmax(300px, auto); */
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr;
     padding: 10px;
     justify-content: center;
     align-items: center;
+  }
+
+  .description {
+    font-size: xx-large;
+  }
+
+  .name {
+    font-size: x-large;
   }
 
   .grid-container-game-btn-nested {
@@ -97,17 +113,30 @@
     bottom: 0;
     right: 0;
     overflow: auto;
-    background: rgb(190, 190, 190); /* Just to visualize the extent */ 
+    background-color: royalblue;
     }
 
   .button {
-    background-color: #3e8e41;
     padding: 15px 32px;
     text-align: center;
     font-size: 16px;
     cursor: pointer;
+    color: white;
+    border-color: white;
   }
 
-  .button:hover {background-color: #a9a8ad}
+  .miniGame-btn {
+    background-color: #FF1818;
+  }
+
+  .guess-btn {
+    background-color: #FFC300;
+  }
+
+  .mystery-btn {
+    background-color: #5463FF;
+  }
+
+  .button:hover {background-color: #ECECEC}
 
   .button:active {background-color: #3e8e41}

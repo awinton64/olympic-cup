@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/olympic-cup/static/css/main.6c9aff85.css",
+    "main.js": "/olympic-cup/static/js/main.3a0ddcfe.js",
+    "static/js/787.48462cd9.chunk.js": "/olympic-cup/static/js/787.48462cd9.chunk.js",
+    "index.html": "/olympic-cup/index.html",
+    "main.6c9aff85.css.map": "/olympic-cup/static/css/main.6c9aff85.css.map",
+    "main.3a0ddcfe.js.map": "/olympic-cup/static/js/main.3a0ddcfe.js.map",
+    "787.48462cd9.chunk.js.map": "/olympic-cup/static/js/787.48462cd9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6c9aff85.css",
+    "static/js/main.3a0ddcfe.js"
+  ]
+}

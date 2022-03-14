@@ -39,10 +39,10 @@ const FilterArea = ({filterExplicit, filterDarts, filterSoloCups, filterPongBall
             <div className={isActive ? 'non-explicit-btn': 'explicit-btn'} onClick={function(){ filterExplicit(); toggleClass()}}>Click to activate the PG-13 version!</div>
             <p>Click to grey out the items you do not have.</p>
             <div className='grid-container-gp-btn'>
-                <div className={isActiveDart ? 'button-gp-de-selected': 'button-gp'} onClick={function(){ filterDarts(); toggleClassDart()}}>2 Darts + Dart Board</div>
+                <div className={isActiveDart ? 'button-gp-de-selected': 'button-gp'} onClick={function(){ filterDarts(); toggleClassDart()}}>2 Darts + Dartboard</div>
                 {/* <div className={isActiveDartBoard ? 'button-gp-de-selected': 'button-gp'} onClick={function(){ filterDartBoard(); toggleClassDartBoard()}}>Dart Board</div> */}
-                <div className={isActiveCup ? 'button-gp-de-selected': 'button-gp'} onClick={function(){ filterSoloCups(); toggleClassCup()}}>2 solo cups per player</div>
-                <div className={isActiveBall ? 'button-gp-de-selected': 'button-gp'} onClick={function(){ filterPongBalls(); toggleClassBall()}}>6 or 4 pong balls</div>
+                <div className={isActiveCup ? 'button-gp-de-selected': 'button-gp'} onClick={function(){ filterSoloCups(); toggleClassCup()}}>1 solo cup per player</div>
+                <div className={isActiveBall ? 'button-gp-de-selected': 'button-gp'} onClick={function(){ filterPongBalls(); toggleClassBall()}}>2 pong balls</div>
                 <div className={isActiveBat ? 'button-gp-de-selected': 'button-gp'} onClick={function(){ filterBats(); toggleClassBat()}}>2 Bats</div>
             </div>
         </div>

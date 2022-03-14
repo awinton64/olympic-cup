@@ -76,7 +76,7 @@
     grid-template-columns: 1fr;
     /* grid-template-columns: repeat(1, 1fr); */
     color: white;
-    background-color: royalblue;
+    background-color: rgb(0, 0, 0);
     padding: 10px;
     align-items: center;
   }
@@ -92,11 +92,11 @@
   }
 
   .description {
-    font-size: xx-large;
+    font-size: x-large;
   }
 
   .name {
-    font-size: x-large;
+    font-size: xx-large;
   }
 
   .grid-container-game-btn-nested {
@@ -113,7 +113,7 @@
     bottom: 0;
     right: 0;
     overflow: auto;
-    background-color: royalblue;
+    background-color: rgb(0, 0, 0);
     }
 
   .button {

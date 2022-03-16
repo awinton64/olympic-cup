@@ -36,6 +36,7 @@ const FilterArea = ({filterExplicit, filterDarts, filterSoloCups, filterPongBall
 
     return (
         <div>
+            <h3>Filter the game cards using the buttons below (back = active)</h3>
             <div className={isActive ? 'non-explicit-btn': 'explicit-btn'} onClick={function(){ filterExplicit(); toggleClass()}}>Click to activate the PG-13 version!</div>
             <p>Click to grey out the items you do not have.</p>
             <div className='grid-container-gp-btn'>

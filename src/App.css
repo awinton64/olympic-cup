@@ -134,6 +134,12 @@
     background-color: #5463FF;
   }
 
+  /* .visible {
+  } */
+  
+  .hidden {
+    display: none;
+  }
   /* .button:hover {background-color: #ECECEC} */
 
   /* .button:active {background-color: #3e8e41} */

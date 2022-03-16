@@ -713,7 +713,7 @@ const displayMysteryCard = () => {
   console.log(mysteryCards);
 }
 
-const [cardDescription, setCardDescription] = useState('Description will show here')
+const [cardDescription, setCardDescription] = useState('Description will show here. Click text to toggle fullscren.')
 const [cardName, setCardName] = useState('Card Name will show here')
 
 //display miniGame Cards

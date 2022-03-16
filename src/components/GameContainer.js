@@ -14,9 +14,9 @@ const GameContainer = ({filterMiniGameCards, displayGuessCard, displayMysteryCar
                 <div className='description'> {cardDescription}</div>
             </div>
             <div className='grid-container-game-btn-nested'>
-                <button className='button miniGame-btn' onClick={filterMiniGameCards}>MiniGame</button>
-                <button className='button guess-btn' onClick={displayGuessCard}>Guess</button>
-                <button className='button mystery-btn' onClick={displayMysteryCard}>Mystery</button>
+                <button className='button miniGame-btn' onClick={filterMiniGameCards}>MiniGame (G)</button>
+                <button className='button guess-btn' onClick={displayGuessCard}>Guess (?)</button>
+                <button className='button mystery-btn' onClick={displayMysteryCard}>Mystery (M)</button>
             </div>
         </div>
     )

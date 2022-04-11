@@ -1,4 +1,5 @@
 import { useState } from "react"
+import React from 'react'
 
 const GameContainer = ({filterMiniGameCards, displayGuessCard, displayMysteryCard, cardDescription, cardName}) => {
     const [isActive, setActive] = useState(false);

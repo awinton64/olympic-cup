@@ -1,4 +1,5 @@
 import { useState } from "react"
+import React from 'react'
 
 
 const FilterArea = ({filterExplicit, filterDarts, filterSoloCups, filterPongBalls, filterBats}) => {

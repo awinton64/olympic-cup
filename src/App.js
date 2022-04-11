@@ -1,4 +1,5 @@
 import { useState } from "react"
+import React from 'react'
 import './App.css';
 import DescriptionContainer from './components/DescriptionContainer';
 import FilterArea from "./components/FilterArea";
@@ -89,6 +90,51 @@ const miniGameCards = [
     pongBalls: true, 
     bats: false,
   },
+  { id: 10, 
+    name: "Screamer",
+    description: "Everyone stands in a circle facing each other with their heads looking at the floor. On the count of 3 everyone looks at someone. If you lock eyes with someone “Scream” and you both are out. Repeat until the last team standing wins. Play best out of three rock paper scissors for tie breakers.", 
+    darts: false, 
+    dartBoard: false, 
+    soloCups: false, 
+    pongBalls: false, 
+    bats: false,
+  },
+  { id: 11, 
+    name: "Red Light Green Light",
+    description: "The caller, one person from both teams, stands at the opposite side of the room from the rest of the group with their eyes closed. The callers take turns saying “green light” and “red light”. The group moves on green and stops on red trying to advance to the caller’s side. The caller opens their eyes when they say “red light” and if someone is moving they are out. First team to have someone reach the caller's win.  ", 
+    darts: false, 
+    dartBoard: false, 
+    soloCups: false, 
+    pongBalls: false, 
+    bats: false,
+  },
+  { id: 12, 
+    name: "Drive",
+    description: "Sit in a circle. Player who drew the card starts by saying “vroom” and leaning left or right with their hands. The person who was leaned on says “vroom” and continues in the same direction by leaning their hand or says “Skirt” changing the direction by leaning with their hands. Continue. First person to mess up loses for their team.", 
+    darts: false, 
+    dartBoard: false, 
+    soloCups: false, 
+    pongBalls: false, 
+    bats: false,
+  },
+  { id: 13, 
+    name: "Never Have I Ever (3 fingers)",
+    description: "Taking turns starting with the player who drew the card say “Never have I ever ____” filling in the blank with something you’ve never done. Put a finger down if you’ve done what was said. Repeat taking turns counter clockwise until the last team with someone with fingers wins.", 
+    darts: false, 
+    dartBoard: false, 
+    soloCups: false, 
+    pongBalls: false, 
+    bats: false,
+  },
+  { id: 14, 
+    name: "Duck Duck Goose",
+    description: "Sit in a circle. Player who drew the card starts out as the goose repeating the word “duck” for each person until saying “goose” at which point they become the duck. The goose chases the duck around the circle trying to sit down where the goose was sitting without being tagged by the goose. Repeat until the goose catches a duck. If tagged the goose wins the gold medal for their team. The goose should always pick someone on the other team.", 
+    darts: false, 
+    dartBoard: false, 
+    soloCups: false, 
+    pongBalls: false, 
+    bats: false,
+  }
 ]
 //When adding or editing the orginal make a copy and replace the clone version
 const [guessCards, setGuessCards] = useState([
@@ -689,13 +735,23 @@ const filterMiniGameCards = () => {
   displayCard(filteredMiniGameCards)
 }
 
+const [cardDescription, setCardDescription] = useState('Description will show here. Click text to toggle fullscren.')
+const [cardName, setCardName] = useState('Card Name will show here')
+
+//display miniGame Cards
+const displayCard = (filteredDeck) => {
+
+  var randomIndex = Math.floor(Math.random() * filteredDeck.length);
+  setCardName(filteredDeck[randomIndex].name)
+  setCardDescription(filteredDeck[randomIndex].description)
+
+}
+
 //create a func in 'setCardDescription' to randomly return a description from 'guessCards' without repeat 
 const displayGuessCard = () => {
   const randomIndex = Math.floor(Math.random() * guessCards.length);
   let lastCard = guessCards[randomIndex].id
-  setCardName('')
   setCardName(guessCards[randomIndex].name)
-  setCardDescription('')
   setCardDescription(guessCards[randomIndex].description)
   setGuessCards(guessCards.filter((guessCard) => guessCard.id !== lastCard)) //need to add error catch when array is empty
   console.log(guessCards);
@@ -713,18 +769,6 @@ const displayMysteryCard = () => {
   console.log(mysteryCards);
 }
 
-const [cardDescription, setCardDescription] = useState('Description will show here. Click text to toggle fullscren.')
-const [cardName, setCardName] = useState('Card Name will show here')
-
-//display miniGame Cards
-const displayCard = (filteredDeck) => {
-  const randomIndex = Math.floor(Math.random() * filteredDeck.length);
-  setCardName('')
-  setCardName(filteredDeck[randomIndex].name)
-  setCardDescription('')
-  setCardDescription(filteredDeck[randomIndex].description)
-  console.log(filteredDeck);
-}
 
   return (
     <div className="app">      
@@ -751,3 +795,51 @@ const displayCard = (filteredDeck) => {
 }
 
 export default App;
+
+
+
+
+/*
+if (gamesPlayed.includes(randomIndex)) {
+    //re-run displayCard func
+    displayCard(filteredDeck)
+    console.log('re-run func', gamesPlayed);
+  } else if (gamesPlayed.length === filteredDeck.length) {
+    //empty gamesPlayed
+    gamesPlayed = []
+    console.log('empty array');
+  } else {
+    // setCardName(filteredDeck[randomIndex].name)
+    gamesPlayed.push(randomIndex)
+    console.log('setCardName', gamesPlayed);
+  }
+
+
+  var gamesPlayed = []
+
+//display miniGame Cards
+const displayCard = (filteredDeck) => {
+  const randomIndex = Math.floor(Math.random() * filteredDeck.length);
+  var isFalse = false
+
+  if (isFalse === gamesPlayed.includes(randomIndex)) {
+    gamesPlayed.push(randomIndex)
+    console.log('not includes', gamesPlayed, randomIndex, filteredDeck[randomIndex].name, filteredDeck)
+    var description = filteredDeck[randomIndex].name
+    setCardName('')
+    // setCardName(filteredDeck[randomIndex].name)
+    setCardDescription(description, console.log('setDescrip'))
+    // setCardDescription(filteredDeck[randomIndex].description)
+  } else if (gamesPlayed.length === filteredDeck.length){
+    gamesPlayed = []
+    setCardDescription('You have played all the games. Click again to shuffle the games.')
+  } else if (gamesPlayed.includes(randomIndex)) {
+    console.log('re-run func');
+    displayCard(filteredDeck)
+  } else {
+    console.log('error');
+  }
+}
+
+
+  */

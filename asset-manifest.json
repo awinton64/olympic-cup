@@ -1,15 +1,15 @@
 {
-  "files": {
-    "main.css": "/olympic-cup/static/css/main.6af5e3fe.css",
-    "main.js": "/olympic-cup/static/js/main.3a0ddcfe.js",
-    "static/js/787.48462cd9.chunk.js": "/olympic-cup/static/js/787.48462cd9.chunk.js",
-    "index.html": "/olympic-cup/index.html",
-    "main.6af5e3fe.css.map": "/olympic-cup/static/css/main.6af5e3fe.css.map",
-    "main.3a0ddcfe.js.map": "/olympic-cup/static/js/main.3a0ddcfe.js.map",
-    "787.48462cd9.chunk.js.map": "/olympic-cup/static/js/787.48462cd9.chunk.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.6af5e3fe.css",
-    "static/js/main.3a0ddcfe.js"
-  ]
+  "main.css": "/olympic-cup/static/css/main.a7b1948f.chunk.css",
+  "main.js": "/olympic-cup/static/js/main.7afdb765.chunk.js",
+  "main.js.map": "/olympic-cup/static/js/main.7afdb765.chunk.js.map",
+  "static/js/1.521dee7d.chunk.js": "/olympic-cup/static/js/1.521dee7d.chunk.js",
+  "static/js/1.521dee7d.chunk.js.map": "/olympic-cup/static/js/1.521dee7d.chunk.js.map",
+  "static/js/2.3a2e0e0b.chunk.js": "/olympic-cup/static/js/2.3a2e0e0b.chunk.js",
+  "static/js/2.3a2e0e0b.chunk.js.map": "/olympic-cup/static/js/2.3a2e0e0b.chunk.js.map",
+  "runtime~main.js": "/olympic-cup/static/js/runtime~main.7243c538.js",
+  "runtime~main.js.map": "/olympic-cup/static/js/runtime~main.7243c538.js.map",
+  "static/css/main.a7b1948f.chunk.css.map": "/olympic-cup/static/css/main.a7b1948f.chunk.css.map",
+  "index.html": "/olympic-cup/index.html",
+  "precache-manifest.05221ce4bcc1ac6de82d53c37eacf075.js": "/olympic-cup/precache-manifest.05221ce4bcc1ac6de82d53c37eacf075.js",
+  "service-worker.js": "/olympic-cup/service-worker.js"
 }

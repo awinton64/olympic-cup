@@ -6,7 +6,10 @@ import FilterArea from "./components/FilterArea";
 import GameContainer from './components/GameContainer';
 
 
+
+
 function App() {
+
 
 const miniGameCards = [
   { id: 1, 
@@ -771,8 +774,8 @@ const displayMysteryCard = () => {
 
 
   return (
-    <div className="app">      
-      <h1>The Olympic Cup @ Winton's World</h1>
+    <div className="app"> 
+      <h1>Olympic Cup</h1>
       <DescriptionContainer/>
       <FilterArea 
         guessCards={guessCards}

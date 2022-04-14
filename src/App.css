@@ -91,6 +91,13 @@
     font-size: x-large;
   }
 
+  .game-board {
+    flex: 1;
+    width: null;
+    height: null;
+    resize: 'contain';
+  }
+
   .name {
     font-size: xx-large;
   }

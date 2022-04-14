@@ -1,5 +1,6 @@
 import { useState } from "react"
 import React from 'react'
+import board from '../board.png';
 
 const DescriptionContainer = () => {
     const [descriptionExpanded, setDescriptionExpanded] = useState(false);
@@ -27,8 +28,7 @@ const DescriptionContainer = () => {
             </div>
             <div className={descriptionExpanded ? null:'hidden'}>
                 <h3>How to make the board?</h3>
-                <img src={process.env.PUBLIC_URL + "/Board.png"} width="500" alt="board" />
-
+                <img src={board} className="game-board" alt="board" />
                 <ol>
                     <li>Take a piece of paper and pen and draw one large circle with a smaller circle inside.</li>
                     <li>Draw two lines to split the board into four quadrants.</li>

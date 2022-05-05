@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/olympic-cup/precache-manifest.7467601fce202d4c72562778f8181ab7.js"
+  "/olympic-cup/precache-manifest.4d539fcf83df369baf215e94c9c67ba2.js"
 );
 
 workbox.clientsClaim();

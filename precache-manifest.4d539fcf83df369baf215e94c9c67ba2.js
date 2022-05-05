@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "71f89fd2918723e385b2",
-    "url": "/olympic-cup/static/css/main.b8a2cfe5.chunk.css"
+    "revision": "ff016ad4d2e7ce5d5dfb",
+    "url": "/olympic-cup/static/css/main.c3129318.chunk.css"
   },
   {
-    "revision": "71f89fd2918723e385b2",
-    "url": "/olympic-cup/static/js/main.71f89fd2.chunk.js"
+    "revision": "ff016ad4d2e7ce5d5dfb",
+    "url": "/olympic-cup/static/js/main.ff016ad4.chunk.js"
   },
   {
     "revision": "521dee7d6a1a5478516b",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/olympic-cup/static/media/board.ff142348.png"
   },
   {
-    "revision": "317ae91010441f425b5b9a046bd240c7",
+    "revision": "c97d02d5a1bda628d15dbe7d1514b7fd",
     "url": "/olympic-cup/index.html"
   }
 ];
